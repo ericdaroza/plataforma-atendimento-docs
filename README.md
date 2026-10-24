@@ -5,6 +5,15 @@
 
 ---
 
+## Sobre este repositório
+
+Repositório **somente de documentação**: visão, pesquisas de mercado, arquitetura e registro de decisões do projeto. Não contém código.
+
+- O código do produto fica em repositórios próprios, ao lado deste em `D:\Projetos`.
+- Este repositório é a **fonte única** das decisões e do contexto do projeto. Conversas com assistentes de IA partem destes arquivos, anexados ou com a pasta conectada.
+
+---
+
 ## Visão em uma frase
 
 **Nenhum cliente se perde, venha de onde vier** — com uma interface que fala a língua de cada negócio e números que ajudam o empresário a decidir.
@@ -29,6 +38,7 @@
 | `ia-estatistica-bi-plataforma.md` | Catálogo de técnicas de IA, estatística e BI por problema, com priorização por fase |
 | `dores-plataformas-atendimento.md` | Pesquisa de dores (internacional + Brasil) e síntese dor → diferencial |
 | `elogios-plataformas-atendimento.md` | Pesquisa de elogios e funcionalidades amadas, classificação obrigatório × diferencial × encantador |
+| `.gitattributes` | Normaliza os `.md` com quebra de linha LF, evitando diffs falsos entre Windows e outros ambientes |
 
 ---
 
@@ -73,6 +83,8 @@
 
 ## Como manter esta documentação
 
-- **Versionar no Git**, junto com o código (ex.: pasta `docs/`).
-- **Decisões novas ou alteradas viram ADRs**; nunca apagar uma decisão antiga, marcar como substituída.
-- Atualizar este README quando um documento for criado ou um pilar mudar.
+- **Commits feitos pelo Eric**, no Git do Windows. Alterações sugeridas por assistentes de IA são escritas nos arquivos e revisadas com `git diff` antes do commit.
+- **Mensagens de commit** no formato `docs: <o que mudou>`.
+- **Decisões novas ou alteradas viram ADRs** em `decisoes-arquiteturais.md`; nunca apagar uma decisão antiga, marcar como substituída.
+- **Documento novo** entra na tabela de documentos deste README no mesmo commit.
+- Atualizar os **pilares**, **questões em aberto** e **próximos passos** deste README sempre que uma ADR mudar de status.
